@@ -10,7 +10,8 @@ set -e
 BUILD_DIR=$1
 CACHE_DIR=$2
 
-echo "-----> Exporting QMAKE"
+echo "-----> Exporting QMAKE and PATH"
 export QMAKE="$BUILD_DIR/.apt/usr/bin/qmake-qt4"
 export PATH="$PATH:$BUILD_DIR/.apt/usr/bin"
 echo "-----> QMAKE=$QMAKE"
+echo "-----> PATH=$PATH"
